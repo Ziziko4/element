@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название вашего магазина</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"><!-- Подключаем файл со стилями -->
+    
+</head>
+<body>
+
+    <header>
+        <h1>Element</h1>
+        <!-- Добавьте логотипы брендов здесь -->
+
+
+    
+    </header>
+
+    <main>
+        <p>Описание вашего магазина и предлагаемых товаров.</p>
+        <h1>Пример изображения</h1>
+        <div class="image-container">
+            <img src="{% static 'img/popp.jpeg' %}" alt="Описание изображения">   
+            <img src="{% static 'img/topp.jpeg' %}" alt="Описание изображения">   
+        </div> 
+    <!-- логотип -->
+        <style>
+            .brand-container {
+                display: flex; /* Располагаем элементы в контейнере горизонтально */
+                justify-content: center; /* Выравниваем элементы по центру по горизонтали */
+                flex-wrap: wrap; /* Позволяет переносить элементы на новую строку, если они не помещаются в одну строку */
+            }
+    
+            .brand-logo {
+                width: 200px; /* Устанавливаем новую ширину для логотипов */
+                margin: 10px; /* Устанавливаем отступ между логотипами */
+            }
+    
+            .brand-container h2 {
+                margin-bottom: 20px; /* Увеличиваем отступ после заголовков */
+            }
+        </style>
+    
+
+        <div class="brand-container">
+            <div>
+                
+                <img class="brand-logo" src="{% static 'img/nike.png' %}" alt="Логотип Zara">
+            </div>
+    
+            <div>
+                
+                <img class="brand-logo" src="{% static 'img/adidas-13.svg' %}" alt="Логотип Puma">
+            </div>
+    
+            <div>
+                
+                <img class="brand-logo" src="{% static 'img/li-ning.png' %}" alt="Логотип Adidas">
+            </div>
+            <div>
+                
+                <img class="brand-logo" src="{% static 'img/puma.png' %}" alt="Логотип Adidas">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3033.3224983127943!2d72.81602537583234!3d40.51236237142439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bdae8fa0b5e3c7%3A0xfb5d5a9189e0899c!2z0J7RiCDQotCw0LDRgtCw0L0g0YHQvtC-0LTQsCDQsdC-0YDQsdC-0YDRgw!5e0!3m2!1sru!2skg!4v1707569055416!5m2!1sru!2skg" width="850" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p> Следите за нами в Instagram: 
+            <a href="https://www.instagram.com/usa_shopping_osh?igsh=NTc4MTIwNjQ2YQ==">
+                <img src="{% static 'img/inst.png' %}" width="30">
+            </a>
+        </p>
+    </footer>
+
+</body>
+</html>
